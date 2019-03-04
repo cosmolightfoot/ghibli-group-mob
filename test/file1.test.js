@@ -1,18 +1,18 @@
+import renderIndexHtmlTemplate from '../src/make-ghibli-template.js';
 const test = QUnit.test;
 
 QUnit.module('construct html fill list');
-    function renderIndexHtmlTemplate() {
-        const html = `<li class="film-item"><a href="./assets/alchemy-logo.png">TBD</a></li>`;
-        const template = document.createElement('template');
-        template.innerHTML = html;
-        return template.content;
-    }
+
+const movieName = { 
+    "name": "Air Destroyer Goliath",
+    "id": "4e09b023-f650-4747-9ab9-eacf14540cfb"
+};
+
 test('make dynamic html list', function(assert) {
     //arrange
-    const json = { 'title': 'My Neighbor Totoro' };
     //act
-    const result = renderIndexHtmlTemplate();
-    const expected = `<li class="film-item"><a href="./assets/alchemy-logo.png">TBD</a></li>`;
+    const result = renderIndexHtmlTemplate(movieName);
+    const expected = `<li class="film-item"><a href="./film-detail.html?id=4e09b023-f650-4747-9ab9-eacf14540cfb">Air Destroyer Goliath</a></li>`;
     //assert
 
 
