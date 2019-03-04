@@ -7,27 +7,27 @@ export default function renderDetailHtmlTemplate(movieName) {
     <section>
         <section class="title-container">
             <dl>Title:</dl>
-            <dt>Castle in the Sky</dt>
+            <dt>${movieName.title}</dt>
         </section>
         <section class="title-container">
             <dl>Released:</dl>
-            <dt>1986</dt>
+            <dt>${movieName.release_date}</dt>
         </section>
         <section class="title-container">
             <dl>Description:</dl>
-            <dt>The orphan Sheeta inherited a mysterious crystal that links her to the mythical sky-kingdom of Laputa. With the help of resourceful Pazu and a rollicking band of sky pirates, she makes her way to the ruins of the once-great civilization. Sheeta and Pazu must outwit the evil Muska, who plans to use Laputa's science to make himself ruler of the world.</dt>
+            <dt>${movieName.description}</dt>
         </section>
         <section class="title-container">
             <dl>Director:</dl>
-            <dt>Hayao Miyazaki</dt>
+            <dt>${movieName.director}</dt>
         </section>
         <section class="title-container">
             <dl>Producer:</dl>
-            <dt>Isao Takahata</dt>
+            <dt>${movieName.producer}</dt>
         </section>
         <section class="title-container">
             <dl>RT Score:</dl>
-            <dt>95</dt>
+            <dt>${movieName.rt_score}</dt>
         </section>
     </section>`;
 
