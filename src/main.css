@@ -1,0 +1,29 @@
+header {
+    display: flex;
+    justify-content: space-between;
+}
+.header-title {
+    flex-grow: 1;
+}
+
+.film-description {
+    display: flex;
+    flex-direction: column;
+}
+
+.film-description dl {
+    border: 2px solid red;
+    width: 150px;
+    justify-content: flex-start;
+}
+
+.film-description: :nth-of-type(even) {
+    justify-content: ;
+
+}
+
+.title-container {
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+}
