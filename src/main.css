@@ -14,6 +14,7 @@ header {
 .film-description dl {
     border: 2px solid red;
     width: 150px;
+    flex-shrink: 0;
     justify-content: flex-start;
 }
 
@@ -27,3 +28,4 @@ header {
     display: flex;
     align-items: center;
 }
+
