@@ -32,3 +32,8 @@ export default function renderDetailHtmlTemplate(movieName) {
     return template.content;
 }
 
+export function loadDetail(movieObject) {
+    const dom = renderDetailHtmlTemplate(movieObject);
+    const filmDescriptionNode = document.getElementById('film-description');
+    filmDescriptionNode.appendChild(dom);
+}
